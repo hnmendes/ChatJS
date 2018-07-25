@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="chat.css">
+  
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+  <script src="chat.js"></script>
+  
+
+</head>
+    <body>    
+
+   <div class="container" id="NomeUsuario" >
+    <div class="row" >
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+           
+            <div class="account-wall">
+               
+                <div class="form-signin">
+                <input class="myname form-control" id="nome" type="text" class="form-control" placeholder="Nome" required autofocus>
+                <input  class="myavatar form-control" type="text" id="avatar" placeholder="Avatar" required>
+                <button class="btn btn-lg btn-primary btn-block" id="btnSubmit" type="submit">
+                    Entrar</button>
+               
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+      
+        <div id="chat" class="col-sm-12 frame" style="display: block;margin-left: 0px;width: 930px;height: 900px;padding-left: 0px;padding-right: 0px;">
+            <ul></ul>
+              
+            <div >
+                <div class="msj-rta macro">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Type a message"/>
+                    </div> 
+
+                </div>
+                <div id="MsgUsuario" style="padding:10px;">
+                    
+                    <span class="glyphicon glyphicon-share-alt"></span>
+               
+                </div>  
+               
+                           
+            </div>
+        </div>    
+
+    </body>
+</html>
